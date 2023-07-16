@@ -1,6 +1,6 @@
 # Bittrex API Services
 
-This project provides a set of services to interact with the Bittrex API. It includes three main services: Market detail Service, Price Ticker Service, and Market Detail Service.
+This project provides a set of services to interact with the Bittrex API. It includes three main services: Market symbol Service, and Market Detail Service.
 
 ## Table of Contents
 
@@ -23,11 +23,11 @@ Before using this project, ensure you have the following prerequisites:
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/bittrex-api-services.git
+git clone https://github.com/santhoshkumar696524/Interview.git
 
 2. Navigate to the project directory:
 
-cd bittrex-api-services
+cd Interview
 
 3. Install the required dependencies:
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-The project provides three services for interacting with the Bittrex API:
+The project provides two services for interacting with the Bittrex API:
 
 1. **Market Detail Service**: Retrieve market summaries.
 
@@ -49,12 +49,13 @@ from market_detail_service import MarketDetailService
 market_detail_service = MarketDetailService()
 market_detail = market_detail_service.get_market_detail()
 
-3.. **Market symbol Service**: Get market detail for a specific market.
+2.. **Market symbol Service**: Get market detail for a specific market.
 SAMPLE:
 from market_symbol_service import MarketSymbolService
 
 market_symbol_service = MarketSymbolService()
 market_symbol = market_symbol_service.get_market_detail("BTC-USDT")
+
 Testing
 The project includes unit tests to ensure the services are functioning correctly. To run the tests, execute the following command:
 
