@@ -2,7 +2,6 @@ import pytest
 from market_detail_service import MarketDetailService
 from market_symbol_service import MarketSymbolService
 
-
 def test_get_market_detail(market_detail_service):
     """Test the get_market_detail method of MarketDetailService."""
     market_detail = market_detail_service.get_market_detail()

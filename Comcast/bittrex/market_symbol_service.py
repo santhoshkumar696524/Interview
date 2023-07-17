@@ -1,7 +1,6 @@
 import requests
 import auth_creds
 
-
 class MarketSymbolService:
     """Class for retrieving symbol details from a market using the Bittrex API."""
 
