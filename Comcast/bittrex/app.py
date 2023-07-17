@@ -2,7 +2,7 @@
 
 from market_detail_service import MarketDetailService
 from market_symbol_service import MarketSymbolService
-
+from new_order_service import NewOrderService
 
 def main():
     """ Main function to demonstrate the usage of the market. """
@@ -16,6 +16,21 @@ def main():
     symbol_detail = market_symbol_service.get_symbol_detail("BTC-USDT")
     print("Symbol Detail:", symbol_detail)
 
+    new_order_service = NewOrderService()
+
+    order_payload = {
+        "marketSymbol": "BTC-USDT",
+        "direction": "BUY",
+        "type": "LIMIT",
+        "quantity": 0.5,
+        "limit": 35000.0,
+        "timeInForce": "GOOD_TIL_CANCELLED",
+        "clientOrderId": "12345",
+        "useAwards": False
+    }
+
+    response = new_order_service.place_new_order(order_payload)
+    print("New Order Response:", response)
 
 if __name__ == "__main__":
     main()
