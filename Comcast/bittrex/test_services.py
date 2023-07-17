@@ -1,3 +1,11 @@
+"""
+Test module for testing market services.
+
+This module contains test cases for the market services, including the `MarketDetailService`
+and `MarketSymbolService` classes. Each test case validates the functionality of specific
+methods in these services.
+
+"""
 import pytest
 from market_detail_service import MarketDetailService
 from market_symbol_service import MarketSymbolService
