@@ -38,6 +38,7 @@ public class StorageProductService implements IProductService {
     @Override
     public Product getProduct(Long id) {
         Product product = productRepo.findProductById(id);
+        productRepo.
         return product;
     }
 
